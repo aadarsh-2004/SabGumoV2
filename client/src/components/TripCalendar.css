@@ -86,7 +86,7 @@
 
 /* Highlighted Trip Date - Changed from dot to background */
 .react-calendar-custom .highlight-trip-date {
-  background-color: #c596ff; /* amber-200 */
+  background-color: #dcc4fa; /* amber-200 */
   color: #4b5563; /* gray-600 for contrast */
   font-weight: 500; /* Slightly bolder */
 }
