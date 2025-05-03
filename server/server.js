@@ -41,6 +41,14 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+app.options("*", (req, res) => {
+  res.set({
+    "Access-Control-Allow-Origin": req.headers.origin,
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type, Authorization",
+  });
+  res.sendStatus(200);
+});
 
 app.use(express.json()); // Parse JSON request bodies
 app.use(fileUpload({
@@ -50,6 +58,8 @@ app.use(fileUpload({
 
 // Placeholder Route
 app.get('/', (req, res) => {
+  res.set("Access-Control-Allow-Origin", req.headers.origin);
+
   res.send('SubGumo Backend Server Running!');
 });
 
