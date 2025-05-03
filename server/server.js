@@ -13,25 +13,34 @@ const PORT = process.env.PORT || 3001; // Backend server port
 
 // Middleware
 // Configure CORS for Vercel deployment
-const allowedOrigins = process.env.CORS_ORIGIN ? process.env.CORS_ORIGIN.split(',') : [];
-app.use(cors({
-  origin: function (origin, callback) {
-    // Allow requests with no origin (like mobile apps or curl requests)
-    if (!origin) return callback(null, true);
-    // Allow requests from specified origins
-    if (allowedOrigins.indexOf(origin) !== -1) {
-      return callback(null, true);
-    }
-    // Allow Vercel preview deployment URLs (if pattern is known/needed)
-    if (/--subgumo-2.*\.vercel\.app$/.test(origin)) { 
-        return callback(null, true);
-    }
-    // Otherwise, disallow
-    const msg = `The CORS policy for this site does not allow access from the specified Origin: ${origin}`;
-    return callback(new Error(msg), false);
-  },
-  credentials: true, // Allow cookies if needed for auth sessions
-})); 
+// const allowedOrigins = process.env.CORS_ORIGIN ? process.env.CORS_ORIGIN.split(',') : [];
+// app.use(cors({
+//   origin: function (origin, callback) {
+//     // Allow requests with no origin (like mobile apps or curl requests)
+//     if (!origin) return callback(null, true);
+//     // Allow requests from specified origins
+//     if (allowedOrigins.indexOf(origin) !== -1) {
+//       return callback(null, true);
+//     }
+//     // Allow Vercel preview deployment URLs (if pattern is known/needed)
+//     if (/--subgumo-2.*\.vercel\.app$/.test(origin)) { 
+//         return callback(null, true);
+//     }
+//     // Otherwise, disallow
+//     const msg = `The CORS policy for this site does not allow access from the specified Origin: ${origin}`;
+//     return callback(new Error(msg), false);
+//   },
+//   credentials: true, // Allow cookies if needed for auth sessions
+// })); 
+const corsOptions = {
+  origin: '*',
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
+};
+
+app.use(cors(corsOptions));
+
 
 app.use(express.json()); // Parse JSON request bodies
 app.use(fileUpload({
