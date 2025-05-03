@@ -29,8 +29,8 @@ const Testimonial = () => {
         imageUrl:anika,
     },
     {
-      name: "Ushit Sharma",
-      title: "Traveller",
+      name:"Vinit Jain",
+      title: "Solo Traveller",
       quote:
         "The trekking tours were incredible!  Well-organized and led by knowledgeable guides.  I saw some breathtaking scenery and learned a lot about the local flora and fauna.",
       imageUrl:vikram,
@@ -38,13 +38,13 @@ const Testimonial = () => {
   ];
 
   return (
-    <section id="testimonials-redesign" className="py-16 md:py-24 bg-amber-50">
+    <section id="testimonials-redesign" className="py-16 md:py-24 bg-gradient-to-b from-white to-amber-50">
       {/* Heading Section */}
       <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16 px-4">
-        <h3 className="text-sm font-semibold text-red-600 uppercase tracking-wider mb-2">
+        <h3 className="text-sm font-semibold text-black-600 uppercase tracking-wider mb-2">
           Hear from Our Explorers
         </h3>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-amber-500 leading-tight inline-block">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-purple-500 leading-tight inline-block">
           Journeys Shared, Memories Made
         </h2>
       </div>

@@ -59,14 +59,14 @@ const Destinations = () => {
   const featuredTrips = trips.slice(0, 4);
 
   return (
-    <section id="destinations-preview" className="py-16 md:py-24 bg-amber-50">
+    <section id="destinations-preview" className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading Section */}
         <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
           <h3 className="text-sm font-semibold text-amber-600 uppercase tracking-wider mb-2"> 
             Start Your Adventure
           </h3>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-cyan-600 leading-tight inline-block">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 leading-tight inline-block">
             Featured Destinations
           </h2>
         </div>

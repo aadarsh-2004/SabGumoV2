@@ -116,7 +116,7 @@ const TripCalendar = () => {
     };
 
     return (
-        <section id="trip-calendar" className="py-16 md:py-24 bg-amber-50 relative"> {/* Changed BG to solid amber-50 */}
+        <section id="trip-calendar" className="py-16 md:py-24 bg-gradient-to-b from-white to-amber-50 relative"> {/* Changed BG to solid amber-50 */}
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"> 
                 {/* Heading Section - Updated Style */}
                 <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">

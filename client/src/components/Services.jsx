@@ -99,10 +99,12 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading Section */}
         <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
-          <h3 className="text-sm font-semibold text-red-600 uppercase tracking-wider mb-2">
+          <h3 className="text-sm font-semibold text-purple-600 uppercase tracking-wider mb-2">
             Our Services
           </h3>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-500 leading-tight">
+
+         
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-orange-600">
             Everything You Need for an Unforgettable Trip
           </h2>
         </div>

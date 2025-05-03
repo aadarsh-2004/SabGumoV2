@@ -63,8 +63,8 @@
 
 /* Current Day */
 .react-calendar-custom .react-calendar__tile--now {
-  background-color: #fef3c7; /* Amber-100 */
-  color: #b45309; /* Amber-700 */
+  background-color: #dbdbdb; /* Amber-100 */
+  color: #e9e8dd; /* Amber-700 */
   font-weight: 600;
 }
 .react-calendar-custom .react-calendar__tile--now:enabled:hover,
@@ -74,7 +74,7 @@
 
 /* Selected Day */
 .react-calendar-custom .react-calendar__tile--active {
-  background-color: #f59e0b; /* Amber-500 */
+  background-color: #828282; /* Amber-500 */
   color: white;
   padding: 0.8em 0.5em; /* Slightly increased vertical padding */
   font-weight: 600;
@@ -86,7 +86,7 @@
 
 /* Highlighted Trip Date - Changed from dot to background */
 .react-calendar-custom .highlight-trip-date {
-  background-color: #fde68a; /* amber-200 */
+  background-color: #c596ff; /* amber-200 */
   color: #4b5563; /* gray-600 for contrast */
   font-weight: 500; /* Slightly bolder */
 }
