@@ -34,7 +34,7 @@ const PORT = process.env.PORT || 3001; // Backend server port
 // })); 
 const corsOptions = {
   origin: '*',
-  methods: ['GET', 'POST', 'OPTIONS'],
+  methods: ['GET', 'POST', 'OPTIONS','PUT' , 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
 };
