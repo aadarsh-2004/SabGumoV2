@@ -336,7 +336,7 @@ function AdminDashboardPage() {
           <Button 
             variant="outline" 
             className="flex items-center gap-1.5 px-2 sm:px-3 h-9" 
-            onClick={() => window.open('https://analytics.google.com/analytics/web/', '_blank')}
+            onClick={() => window.open('https://analytics.google.com/analytics/web/#/p477312202/reports/intelligenthome?params=_u..nav%3Dmaui', '_blank')}
             aria-label="Open Google Analytics"
           >
             <BarChart2 className="h-4 w-4" />
